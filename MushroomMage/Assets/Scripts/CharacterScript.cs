@@ -19,7 +19,7 @@ public class CharacterScript : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         Ray ray1 = mainCamera.ScreenPointToRay(Input.mousePosition);
         if (Physics.Raycast(ray1, out RaycastHit raycastHit1))

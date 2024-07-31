@@ -22,10 +22,10 @@ public class EnemyBehaviorAndHealth1 : MonoBehaviour
 
     public void OnCollisionEnter (Collision collision)
     {
-        if (collision.collider.gameObject.tag == "Bullit")
+        if (collision.collider.gameObject.tag == "Bullet")
         {
             currentHealth -= amount;
-            if (currentHealth < 0)
+            if (currentHealth == 0)
             {
                 Destroy(gameObject);
             }

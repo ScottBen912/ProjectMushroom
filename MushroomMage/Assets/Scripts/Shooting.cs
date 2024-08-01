@@ -5,6 +5,10 @@ using UnityEngine;
 public class Shooting : MonoBehaviour
 {
     [SerializeField] GameObject bulletPrefab;
+    public GameObject reticle;
+    public GameObject wand;
+    public GameObject character;
+    public Vector3 direction;
     [SerializeField] Transform WandEnd;
     [SerializeField] float speed = 5f;
     Rigidbody rb;
@@ -20,14 +24,15 @@ public class Shooting : MonoBehaviour
     {
         if(Input.GetMouseButtonDown(0))
         {
+            direction = (reticle.transform.position - wand.transform.position).normalized;
+            WandEnd.LookAt(reticle.transform.position);
             Shoot();
         }
     }
 
     void Shoot()
     {
-        rb.velocity = new Vector3(0f, 0f, 3f) * speed;
-        Instantiate(bulletPrefab, WandEnd.transform.position, Quaternion.identity);
+        Instantiate(bulletPrefab, WandEnd.transform.position, Quaternion.Euler(0f, character.transform.localEulerAngles.y, 0f));
        
     }
 }

@@ -15,6 +15,8 @@ public class SceneManage : MonoBehaviour
     void Update()
     {
         if (SceneManager.GetActiveScene().buildIndex == 0)
+        {
             SceneManager.LoadScene(1, LoadSceneMode.Additive);
+        }
     }
 }

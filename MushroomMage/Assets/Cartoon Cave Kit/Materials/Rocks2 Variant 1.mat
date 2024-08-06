@@ -29,6 +29,6 @@ Material:
     m_Floats:
     - _Shininess: 1
     m_Colors:
-    - _Color: {r: 1, g: 0.5514937, b: 0.504717, a: 1}
-    - _Emission: {r: 1, g: 0.5446331, b: 0.495283, a: 0}
+    - _Color: {r: 0.8000001, g: 0.16078432, b: 0.09411766, a: 1}
+    - _Emission: {r: 1, g: 0.20516275, b: 0.11792451, a: 0}
   m_BuildTextureStacks: []

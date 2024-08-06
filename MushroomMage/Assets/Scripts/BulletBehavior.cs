@@ -23,6 +23,11 @@ public class BulletBehavior : MonoBehaviour
         {
             DestroyBullet();
         }
+
+         if (collision.gameObject.tag == "Wall")
+        {
+            DestroyBullet();
+        }
     }
 
     void DestroyBullet()

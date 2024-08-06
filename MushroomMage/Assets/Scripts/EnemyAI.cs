@@ -6,9 +6,9 @@ using UnityEngine.UI;
 public class EnemyAI : MonoBehaviour
 {
     public Transform Player;
-    int MoveSpeed = 4;
-    int MaxDist = 10;
-    int MinDist = 5;
+    public int MoveSpeed = 4;
+    public int MaxDist = 10;
+    public int MinDist = 5;
 
     // Start is called before the first frame update
     void Start()
@@ -21,14 +21,14 @@ public class EnemyAI : MonoBehaviour
     {
         transform.LookAt(Player);
 
-        if (Vector3.Distance(transform.position, Player.position)>MinDist)
+        if (Vector3.Distance(transform.position, Player.position) <= MaxDist)
         {
             transform.position += transform.forward * MoveSpeed * Time.deltaTime;
 
-            //if (Vector3.Distance(transform.position, Player.position) <= MaxDist)
-           // {
+            //if (Vector3.Distance(transform.position, Player.position) <= Dist)
+            //{
 
-           // }
+            //}
         }
     }
 }

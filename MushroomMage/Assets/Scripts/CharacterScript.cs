@@ -13,11 +13,12 @@ public class CharacterScript : MonoBehaviour
     public Vector3 direction;
     public Vector3 mouseWorldPosition;
     public float angle;
+    public int health;
     // Start is called before the first frame update
     void Start()
     {
+        health = 3;
     }
-
     // Update is called once per frame
     void FixedUpdate()
     {

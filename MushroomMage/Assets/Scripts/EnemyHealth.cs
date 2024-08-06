@@ -2,10 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyBehaviorAndHealth1 : MonoBehaviour
+public class EnemyHealth : MonoBehaviour
 {
 
-    public int maxHealth = 3;
+    public int maxHealth = 2;
     public int currentHealth;
     public int amount = 1;
     // Start is called before the first frame update
@@ -17,10 +17,10 @@ public class EnemyBehaviorAndHealth1 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
-    public void OnCollisionEnter (Collision collision)
+    public void OnCollisionEnter(Collision collision)
     {
         if (collision.collider.gameObject.tag == "Bullet")
         {

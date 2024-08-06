@@ -8,13 +8,19 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Rocks2 Variant 1
-  m_Shader: {fileID: 6, guid: 0000000000000000f000000000000000, type: 0}
+  m_Shader: {fileID: 4800000, guid: 1f53b2e079258874d987bc2948630b78, type: 3}
   m_Parent: {fileID: 2100000, guid: 7253002ce95fb98478aea451e6a45afb, type: 2}
   m_ModifiedSerializedProperties: 0
-  m_ValidKeywords: []
+  m_ValidKeywords:
+  - _DETAILSOURCE_SPECULARALPHA
+  - _SOURCE_SPECULARALPHA
+  - _TRIPLANARSPACEPROJECTION_OBJECTSPACE
   m_InvalidKeywords:
   - _EMISSION
+  - _ENABLETRIPLANARPROJECTION_ON
   - _NORMALMAP
+  - _USEAOFROMMAINPROPERTIES_ON
+  - _USEEMISSIONFROMMAINPROPERTIES_ON
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0

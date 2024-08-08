@@ -8,13 +8,13 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: LiberationSans SDF Material
-  m_Shader: {fileID: 4800000, guid: f7ada0af4f174f0694ca6a487b8f543d, type: 3}
+  m_Shader: {fileID: 4800000, guid: 14eb328de4b8eb245bb7cea29e4ac00b, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
-  m_ValidKeywords: []
-  m_InvalidKeywords:
+  m_ValidKeywords:
   - OUTLINE_ON
   - UNDERLAY_ON
+  m_InvalidKeywords:
   - _DETAILSOURCE_SPECULARALPHA
   - _EMISSION
   - _ENABLETRIPLANARPROJECTION_ON
@@ -110,6 +110,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
+    - _Ambient: 0.5
     - _AoIntensity: 1
     - _Bevel: 0
     - _BevelClamp: 0
@@ -133,6 +134,7 @@ Material:
     - _DetailSaturation: 0
     - _DetailSource: 0
     - _DetailSpecularIntensity: 0.2
+    - _Diffuse: 0.5
     - _DstBlend: 0
     - _EmissionIntensity: 1
     - _EnableDetailMask: 0
@@ -154,6 +156,7 @@ Material:
     - _InvertABaseColor: 0
     - _InvertCutout: 0
     - _InvertMask: 0
+    - _LightAngle: 3.1416
     - _MaskSoftnessX: 0
     - _MaskSoftnessY: 0
     - _Metallic: 0
@@ -166,6 +169,7 @@ Material:
     - _OutlineWidth: 0.525
     - _Parallax: 0.02
     - _PerspectiveFilter: 0.875
+    - _Reflectivity: 10
     - _Saturation: 0
     - _ScaleRatioA: 0.9
     - _ScaleRatioB: 0.87525
@@ -179,6 +183,7 @@ Material:
     - _Source: 0
     - _SpecularHighlights: 1
     - _SpecularIntensity: 0.2
+    - _SpecularPower: 2
     - _SpreadDetailMap: 0
     - _SrcBlend: 1
     - _Stencil: 0
@@ -218,6 +223,7 @@ Material:
     - _FaceColor: {r: 0, g: 0, b: 0, a: 1}
     - _GlobalXYTilingXYZWOffsetXY: {r: 1, g: 1, b: 0, a: 0}
     - _GlowColor: {r: 1, g: 1, b: 1, a: 1}
+    - _MaskCoord: {r: 0, g: 0, b: 32767, a: 32767}
     - _OutlineColor: {r: 0, g: 0, b: 0, a: 1}
     - _ReflectFaceColor: {r: 0, g: 0, b: 0, a: 1}
     - _ReflectOutlineColor: {r: 0, g: 0, b: 0, a: 1}

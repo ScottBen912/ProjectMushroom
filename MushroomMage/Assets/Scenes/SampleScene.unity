@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -3829,7 +3829,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bde81fa88783cce4f9e8f0f2b2df5531, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 3
+  maxHealth: 20
   currentHealth: 0
   amount: 1
   alive: 0
@@ -9512,6 +9512,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -3.23
       objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 394d46afd0fea0a4e8e6f4919094818e, type: 3}
+      propertyPath: m_TagString
+      value: Finish
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9519,6 +9523,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 8164078558771037576, guid: 394d46afd0fea0a4e8e6f4919094818e, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1124426623}
+    - targetCorrespondingSourceObject: {fileID: 8164078558771037576, guid: 394d46afd0fea0a4e8e6f4919094818e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1124426627}
   m_SourcePrefab: {fileID: 100100000, guid: 394d46afd0fea0a4e8e6f4919094818e, type: 3}
 --- !u!1 &1124426622 stripped
 GameObject:
@@ -9544,10 +9551,33 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 7.099884
+  m_Radius: 6.5
   m_Height: 14.199768
   m_Direction: 1
-  m_Center: {x: 0.62, y: 0.100818634, z: -2.5200005}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!136 &1124426627
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1124426622}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 8
+  m_Height: 10.035322
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1126150356
 GameObject:
   m_ObjectHideFlags: 0
@@ -14378,11 +14408,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1429002835805953493, guid: cd399ab3339c6bf4c802fed2a86ca97d, type: 3}
       propertyPath: m_Value
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1429002835805953493, guid: cd399ab3339c6bf4c802fed2a86ca97d, type: 3}
       propertyPath: m_MaxValue
-      value: 3
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1429002835805953493, guid: cd399ab3339c6bf4c802fed2a86ca97d, type: 3}
       propertyPath: m_WholeNumbers

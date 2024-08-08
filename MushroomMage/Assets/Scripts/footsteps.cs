@@ -15,12 +15,12 @@ public class NewBehaviourScript : MonoBehaviour
             //footstepsSound.enabled = false;
             //sprintSound.enabled = true;
             //}
-                footstepsSound.enabled = true;
+                footstepsSound.mute = false;
                 //sprintSound.enabled = false;
             }
         else
             {
-                footstepsSound.enabled = false;
+                footstepsSound.mute = true;
                 //sprintSound.enabled = false;
             }
     }
